@@ -1,0 +1,93 @@
+:root {
+/* ====== Paging Controls ====== */
+#paging-controls { background: #f8f9fa; padding: 1rem; border-radius: 0.5rem; border: 1px solid #dee2e6; }
+#paging-controls .form-select { min-width: 80px; }
+#paging-controls .btn { min-width: 80px; }
+#paging-controls .d-flex { gap: 0.5rem; }
+
+
+/* ====== Chart container (instead of inline height) ====== */
+#chartContainer { height: 420px; }
+
+
+/* ====== Responsive ====== */
+@media (max-width: 576px) {
+.hero-parallax { height: 36vh; background-attachment: scroll; }
+.navbar-brand { font-size: 1.2rem !important; }
+#search-form { flex-direction: column; gap: .5rem; margin-top: 1rem; }
+#search-input { font-size: 16px; }
+.coin-card { margin-bottom: 1rem; }
+.coin-card .card-body { padding: 1rem; }
+.coin-card .symbol { font-size: 1.1rem; }
+.coin-card .toggle-btn { min-width: 70px; font-size: .8rem; padding: .375rem .5rem; }
+.moreinfo-body { padding: .75rem !important; }
+.moreinfo-body img { width: 40px; height: 40px; }
+.price-badge { font-size: .75rem; padding: .25rem .5rem; }
+#chartContainer { height: 300px; }
+.modal-dialog { margin: 1rem; }
+.modal-body { padding: 1rem; }
+.form-check { margin-top: 1rem; margin-left: 0 !important; }
+.container { padding-left: 1rem; padding-right: 1rem; }
+.my-4 { margin-top: 1rem !important; margin-bottom: 1rem !important; }
+}
+:root { --hero-img: url('src/img/header_bg.png'); }
+
+
+/* Layout helpers extracted from inline styles */
+.overlay-dim { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.15); z-index: 2000; }
+.w-auto { width: auto !important; }
+#chartContainer { height: 420px; }
+
+
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; }
+
+
+/* Paging Controls */
+#paging-controls { background: #f8f9fa; padding: 1rem; border-radius: 0.5rem; border: 1px solid #dee2e6; }
+#paging-controls .form-select { min-width: 80px; }
+#paging-controls .btn { min-width: 80px; }
+#paging-controls .d-flex { gap: 0.5rem; }
+
+
+/* Parallax hero */
+.hero-parallax { height: 42vh; background-image: var(--hero-img); background-size: cover; background-position: center; background-attachment: fixed; position: relative; }
+.hero-parallax::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.45)); }
+.hero-parallax > .container { position: relative; z-index: 1; }
+.hero-parallax h1 { text-shadow: 0 2px 4px rgba(0,0,0,.5); }
+
+
+/* Cards */
+.coin-card .symbol { letter-spacing: 1px; font-weight: 700; }
+.coin-card .toggle-btn.active { background-color: #0d6efd; color: #fff; border-color: #0d6efd; }
+.coin-card .toggle-btn { min-width: 92px; }
+.moreinfo-body img { width: 48px; height: 48px; object-fit: contain; }
+.price-badge { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; }
+
+
+/* Progress heights (used instead of inline style) */
+.progress-thin { height: 6px; }
+.progress-tiny { height: 4px; }
+.progress-bar.indeterminate { width: 100%; }
+
+
+/* Mobile responsive tweaks */
+@media (max-width: 576px) {
+.hero-parallax { height: 36vh; background-attachment: scroll; }
+.navbar-brand { font-size: 1.2rem !important; }
+#search-form { flex-direction: column; gap: .5rem; margin-top: 1rem; }
+#search-input { font-size: 16px; }
+.coin-card { margin-bottom: 1rem; }
+.coin-card .card-body { padding: 1rem; }
+.coin-card .symbol { font-size: 1.1rem; }
+.coin-card .toggle-btn { min-width: 70px; font-size: .8rem; padding: .375rem .5rem; }
+.moreinfo-body { padding: .75rem !important; }
+.moreinfo-body img { width: 40px; height: 40px; }
+.price-badge { font-size: .75rem; padding: .25rem .5rem; }
+#chartContainer { height: 300px; }
+.modal-dialog { margin: 1rem; }
+.modal-body { padding: 1rem; }
+.form-check { margin-top: 1rem; margin-left: 0 !important; }
+.container { padding-left: 1rem; padding-right: 1rem; }
+.my-4 { margin-top: 1rem !important; margin-bottom: 1rem !important; }
+.gap-2 { gap: .5rem !important; } .gap-3 { gap: .75rem !important; }
+}}
